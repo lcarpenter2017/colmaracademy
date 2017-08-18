@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* Universal Styles TO BE UPDATED*/
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 5.3125rem; /* To offset for fixed header. */
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
