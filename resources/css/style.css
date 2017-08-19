@@ -12,12 +12,17 @@ html {
 }
 
 .main-content {
+  border: solid black 2px;
   position: relative;
   top: 4rem; /* To offset for fixed header. */
 }
 
 .center {
   text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 .button {
@@ -34,6 +39,14 @@ html {
   display: block;
 }
 
+.flexcolumn {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ margin: 0 auto;
+ width: 100%;
+}
+
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2rem;
@@ -41,11 +54,11 @@ html {
 }
 
 span .light {
-    font-weight: light;
+    font-weight: 300;
 }
 
 span .bold {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* Header */
@@ -146,11 +159,11 @@ header .mobile {
   }
 }
 
-/* Main Banner */
+/* Main Banners */
 
 .main-content {
-  color: lightgrey;
-  background-color: darkseagreen;
+  color: black;
+  background-color: lightgray;
   opacity: .7;
 }
 
@@ -163,84 +176,49 @@ header .mobile {
   width: 60%;
 }
 
-.content-center {
+.content .left {
   width: 40%;
+  border: solid black 2px;
 }
 
 .starthere {
   padding: .5rem;
+  text-align: center;
+  width: 75%;
 }
 
-#sign-up-cta h1 {
-  font-size: 3.125rem;
+h2 {
+  font-family: Arial;
+  font-size: 2rem;
+  padding-bottom: .5rem;
 }
 
-#sign-up-cta h2 {
-  font-size: 2.25rem;
-}
-
-#sign-up-cta span strong {
-  font-weight: bold;
-}
-
-#sign-up-cta .cursive {
-  font-family: "Damion", cursive;
-}
-
-#sign-up-cta .striking {
-  font-family: "Rubik", sans-serif;
+h3 {
+  font-size: 1.5rem;
   padding-bottom: .75rem;
 }
 
-#sign-up-cta .button {
-  margin-top: 1.625rem;
-  padding: 1.25rem 7.25rem;
-}
+/* Information Section */
 
-@media only screen and (max-width: 760px) {
-  #sign-up-section {
-    align-items: center;
-    justify-content: center;
-    height: 28rem;
-  }
 
-  #sign-up-cta {
-    position: static;
-    width: auto;
+.rightpix {
+    margin: 0auto;
     height: auto;
-    background-color: transparent;
-    border: none;
-  }
-
-  #sign-up-cta .content {
-    margin-top: 0;
-  }
-
-  #sign-up-cta .email {
-    display: none;
-  }
-
-  #sign-up-cta h1 {
-    font-size: 3.125rem;
-  }
-
-  #sign-up-cta h2 {
-    font-size: 2.25rem;
-  }
+    max-width: 100%;
+    padding: 1rem;
+    border: solid black 2px;
 }
 
-@media only screen and (max-width: 450px) {
-  #sign-up-section {
-    height: 20rem;
-  }
-
-  #sign-up-cta h1 {
-    font-size: 2.25rem;
-  }
-
-  #sign-up-cta h2 {
-    font-size: 2rem;
-  }
+.rightpix img {
+    width: 35%;
 }
 
-/* Features Section */
+.rightcaption {
+    width: 65%;
+    height: auto;
+    margin: .55rem;
+    border: solid black 2px;
+}
+
+/* Course Section */
+
