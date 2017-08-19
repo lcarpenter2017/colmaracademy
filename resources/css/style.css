@@ -3,8 +3,12 @@
 /* Universal Styles */
 
 html {
-  font-family: "Arial", sans-serif;
+  font-family: Helvetica;
   font-size: 16px;
+}
+
+.container {
+  padding: 2rem 1.5rem;
 }
 
 .main-content {
@@ -36,24 +40,52 @@ html {
   }
 }
 
-/* Header */
-
-header {
-  position: fixed;
-  width: 100%;
-  border-bottom: solid 1px #c6c1c1;
-  background-color: white;
-  z-index: 100;
+span .light {
+    font-weight: light;
 }
+
+span .bold {
+    font-weight: bold;
+}
+
+/* Header */
 
 header .content {
   display: flex;
+  justify-content: space-between;
+  position: fixed;
   align-items: center;
-  padding: 1.875rem;
+  align-content: center;
+  width: 100%;
+  background-color: powderblue;
+  z-index: 5;
+  height: 4rem;
+  border: solid black 2px;
 }
 
 header .logo {
+  display: flex;
+  width: auto;
+  height: 2rem;
+  border: solid black 2px;
+}
+
+.logo img {
+  height: 2rem;
+  max-width: 100%;
+}
+
+.logo {
   flex: 1;
+  align-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  height: auto;
+  padding-left: 2rem;
+}
+
+header nav {
+  padding-right: 2rem;
 }
 
 header nav ul {
@@ -61,19 +93,12 @@ header nav ul {
 }
 
 nav li {
-  padding-left: 3.5rem;
+  padding-left: 2rem;
 }
 
 nav a {
-  vertical-align: bottom;
-  line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
-}
-
-header .icon {
-  width: 1rem;
-  padding-left: .75rem;
 }
 
 header .mobile {
@@ -86,29 +111,33 @@ header .mobile {
     padding: .5rem 0;
   }
     
-    header .logo {
+  header nav {
+    padding: 0rem;
+}
+    
+  header .logo {
     display: none;
-  }
+}
     
   header .desktop {
     display: none;
-  }
+}
 
   header .mobile {
     display: block;
     width: 100%;
-  }
+}
     
   header .mobile ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-  }
+}
 
   header .mobile li {
     padding: 0;
-  }
+}
 
   header .mobile .button {
     padding: .1875rem .5rem;
@@ -116,3 +145,102 @@ header .mobile {
     color: white;
   }
 }
+
+/* Main Banner */
+
+.main-content {
+  color: lightgrey;
+  background-color: darkseagreen;
+  opacity: .7;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.main-image {
+  width: 60%;
+}
+
+.content-center {
+  width: 40%;
+}
+
+.starthere {
+  padding: .5rem;
+}
+
+#sign-up-cta h1 {
+  font-size: 3.125rem;
+}
+
+#sign-up-cta h2 {
+  font-size: 2.25rem;
+}
+
+#sign-up-cta span strong {
+  font-weight: bold;
+}
+
+#sign-up-cta .cursive {
+  font-family: "Damion", cursive;
+}
+
+#sign-up-cta .striking {
+  font-family: "Rubik", sans-serif;
+  padding-bottom: .75rem;
+}
+
+#sign-up-cta .button {
+  margin-top: 1.625rem;
+  padding: 1.25rem 7.25rem;
+}
+
+@media only screen and (max-width: 760px) {
+  #sign-up-section {
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+  }
+
+  #sign-up-cta {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+  }
+
+  #sign-up-cta .content {
+    margin-top: 0;
+  }
+
+  #sign-up-cta .email {
+    display: none;
+  }
+
+  #sign-up-cta h1 {
+    font-size: 3.125rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #sign-up-section {
+    height: 20rem;
+  }
+
+  #sign-up-cta h1 {
+    font-size: 2.25rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Features Section */
