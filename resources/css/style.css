@@ -241,3 +241,57 @@ h3 {
 
 /* Course Section */
 
+/* This is the course section where the background and text colors are styles */
+#coursesection 
+  background-color: darkgrey;
+  color: black;
+  border: solid black 2px;
+}
+
+/* This is the course section containing formatting for the box containing the text introducing the course*/s 
+.coursetext {
+    align-items: center;
+    border: solid black 2px;
+}
+
+/* This is the flexbox that formats each individual coursetype box containing image and text and causes them to wrap*/
+.coursetypes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto; 
+    padding-top: 2rem;
+    border: solid black 2px;
+}
+
+/* This is the flexbox that gives the box containing each image its width and other formatting*/
+.courses {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border: solid black 2px;
+}
+
+/* This is the style that centers each image its width and other formatting*/
+.courseimg img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.coursecaption {
+    background-color: white;
+    padding: 1rem 1.5rem 1.5rem 1rem;
+    height: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    font-size: .75rem;
+    background-color: darkblue;
+    color: #F5FAFF;
+}
