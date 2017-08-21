@@ -23,12 +23,14 @@ html {
 }
 
 .left {
-    text-align: left;
+  text-align: left;
 }
 
 .button {
-  border-radius: 5px;
-  background-color: #4a4a4a;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.25rem;
+  background-color: #3A404B;
   color: white;
 }
 
@@ -48,12 +50,14 @@ html {
   }
 }
 
-span .light {
-    font-weight: 300;
+h1.colmar {
+    font-size: 1.25rem;
+    color: #3A404B;
 }
 
-span .bold {
-    font-weight: 600;
+h1.academy {
+    font-weight: bold;
+    color: #3A404B;
 }
 
 /* Header */
@@ -65,7 +69,7 @@ header .content {
   align-items: center;
   align-content: center;
   width: 100%;
-  background-color: powderblue;
+  background-color: #B1C1D0;
   z-index: 5;
   height: 4rem;
   border: solid black 2px;
@@ -76,6 +80,8 @@ header .logo {
   width: auto;
   height: 2rem;
   border: solid black 2px;
+  align-content: center;
+  margin: 0 auto;
 }
 
 .logo img {
@@ -86,6 +92,7 @@ header .logo {
 .logo {
   flex: 1;
   align-content: center;
+  line-height: 1.25;
   align-items: center;
   font-size: 1.25rem;
   height: auto;
@@ -102,11 +109,12 @@ header nav ul {
 
 nav li {
   padding-left: 2rem;
+  line-height: 1.5;
 }
 
 nav a {
-  font-size: 1rem;
-  color: #4a4a4a;
+  font-size: 1.15rem;
+  color: #0C0807;
 }
 
 header .mobile {
@@ -150,7 +158,7 @@ header .mobile {
   header .mobile .button {
     padding: .1875rem .5rem;
     line-height: 1.6;
-    color: white;
+    font-size: 1.25 rem;
   }
 }
 
@@ -158,7 +166,7 @@ header .mobile {
 
 .main-content {
   color: black;
-  background-color: lightgray;
+  background-color: #FFFFFF;
 }
 
 .banner {
@@ -166,8 +174,8 @@ header .mobile {
   align-items: center;
 }
 
-.secondary .banner {
-    background-color: aliceblue;
+.secondary.banner {
+    background-color: #C7CED4;
 }
 
 .main-image, .secondary-image, .video-video {
@@ -175,7 +183,7 @@ header .mobile {
 }
 
 .secondary img, video {
-    width: 100%;
+  width: 100%;
 }
 
 .content .container {
@@ -184,20 +192,26 @@ header .mobile {
 }
 
 .starthere {
-  padding: .5rem;
+  align-content: center;
   text-align: center;
-  width: 75%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 h2 {
-  font-family: Arial;
+  font-family: Palatino;
+  color: #3A404B;
   font-size: 2rem;
   padding-bottom: .5rem;
+  text-align: center;
 }
 
 h3 {
+  font-family: Palatino;
+  color: #3A404B;
   font-size: 1.5rem;
   padding-bottom: .75rem;
+  text-align: center;
 }
 
 /* Information Section */
@@ -215,6 +229,7 @@ h3 {
     margin: 0 auto;
     height: auto;
     max-width: 100%;
+    background-color: white;
     border: solid black 2px;
 }
 
@@ -234,7 +249,7 @@ h3 {
 
 /* This is the course section where the background and text colors are styles */
 #coursesection{
-  background-color: darkgrey;
+  background-color: #3A404B;
   color: black;
 }
 
@@ -271,12 +286,11 @@ h3 {
 }
 
 
-
 footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem 2rem 1.5rem;
     font-size: .75rem;
-    background-color: darkblue;
+    background-color: #B1C1D0;
     color: #F5FAFF;
 }
