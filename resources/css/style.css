@@ -170,11 +170,11 @@ header .mobile {
     background-color: aliceblue;
 }
 
-.main-image, .secondary-image {
+.main-image, .secondary-image, .video-video {
   width: 60%;
 }
 
-.secondary img {
+.secondary img, video {
     width: 100%;
 }
 
@@ -269,6 +269,8 @@ h3 {
     padding: 1rem 1.5rem 1.5rem 1rem;
     height: auto;
 }
+
+
 
 footer {
     display: flex;
