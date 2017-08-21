@@ -12,18 +12,14 @@ html {
   border: solid blue 2px;
 }
 
-.main-content {
+.content {
+  width: 40%;
   border: solid black 2px;
+}
+
+.main-content {
   position: relative;
   top: 4rem; /* To offset for fixed header. */
-}
-
-.center {
-  text-align: center;
-}
-
-.left {
-  text-align: left;
 }
 
 .button {
@@ -32,16 +28,6 @@ html {
   font-size: 1.25rem;
   background-color: #3A404B;
   color: white;
-}
-
-.flexcolumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  border: solid black 2px;
 }
 
 h2, h3, h4, p, {
@@ -59,18 +45,26 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  padding-top: .75rem;
   padding-bottom: .75rem;
   text-align: center;
+  font-weight: bold;
 }
 
 h4 {
   font-size: 1.3 rem;
   font-weight: bold;
+  padding-bottom: .75rem;
 }
 
 h5 {
+  line-height: 1.5rem;
   font-size: .90rem
   padding: .5rem 0rem .5rem 0rem;
+}
+
+p {
+  padding-bottom: .75rem;
 }
 
 /* Header */
@@ -85,14 +79,12 @@ header .content {
   background-color: #B1C1D0;
   z-index: 5;
   height: 4rem;
-  border: solid black 2px;
 }
 
 header .logo {
   display: flex;
   width: auto;
   height: 2rem;
-  border: solid black 2px;
   align-content: center;
   margin: 0 auto;
 }
@@ -147,34 +139,33 @@ header .mobile {
 /* Media Queries for Header Section */
 
 @media only screen and (max-width: 760px) {
-
   header .content {
     padding: .5rem 0;
   }
     
   header nav {
     padding: 0rem;
-}
+  }
     
   header .logo, header .desktop, .secondary .main-image.container {
     display: none;
-}
+  }
     
   header .mobile {
     display: block;
     width: 100%;
-}
+  }
     
   header .mobile ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-}
+  }
 
   header .mobile li {
     padding: 0;
-}
+  }
 
   header .mobile .button {
     padding: .1875rem .5rem;
@@ -203,20 +194,15 @@ p.hiring {
 }
 
 .secondary.banner {
-    background-color: #C7CED4;
+  background-color: #C7CED4;
 }
 
 .main-image, .secondary-image, .video-video {
-  width: 60%;
+  max-width: 60%;
 }
 
 .secondary img, video {
   width: 100%;
-}
-
-.content .container {
-  width: 40%;
-  border: solid black 2px;
 }
 
 .starthere {
@@ -230,7 +216,7 @@ p.hiring {
 
 @media only screen and (max-width: 760px) {
   .main-content {
-   top: 5rem;
+    top: 5rem;
   }
     
   .banner {
@@ -241,92 +227,119 @@ p.hiring {
   }
     
   .container {
-   padding: 0;
-}
+    padding: 0;
+  }
 
   .main-image {
     width: 100%;
     padding: 0;
-    }
+  }
     
-h2 {
-  font-size: 1.5rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-}
+  h2 {
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
 
-h3 {
-  font-size: 1.0rem;
-  padding-bottom: .75rem;
-}
+  h3 {
+    font-size: 1.0rem;
+    padding-bottom: .75rem;
+  }
     
-.starthere {
-  align-content: center;
-  text-align: center;
-  width: 60%;
-  margin: 0 auto;
-}
-    
+  .starthere {
+    align-content: center;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }  
 }
     
 /* Information Section */
-    
-.leftcaption {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    border: solid black 2px;
-}
 
 .rightpix {
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    max-width: 100%;
+    margin: 1rem auto;
     background-color: white;
-    border: solid black 2px;
+    border-bottom: solid #3A404B .25rem;
+    border-top: solid #3A404B .25rem;
 }
 
 .rightpix img {
     width: 35%;
     padding: 1rem;
+    height: auto;
+}
+
+.rightpix img:nth-child(2n){
+    display: none;
 }
 
 .rightcaption {
-    max-width: 65%;
+    max-width: 100%;
     height: auto;
-    margin: .55rem;
+    margin: 0
     color: white;
-    border: solid black 2px;
 }
 
 .orientation a {
-  font-size: 1rem;
+  border-radius: .2rem;
+  padding: .2rem;
+  font-size: 1.15rem;
   color: white;
+  background-color: #3A404B;
 }
-
+    
 /* Media Queries for Information Section */
 
-/* Course Section */
-
-.white{
-    font-color: white;
+@media only screen and (max-width: 760px) {
+    
+    .rightpix {
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: .5rem;
+        border-left: none;
+        border-top: .8rem solid #3A404B;
+        border-bottom: none;
+    }
+    
+    .rightpix img:first-of-type {
+        display: none;
+    }
+    
+    .rightpix img:nth-child(2n){
+        display: block;
+        width: 100%;
+    }
+        
+    .rightcaption {
+        width: 100%;
+    }
 }
+    
+/* Course Section */
 
 /* This is the course section where the background and text colors are styles */
 #coursesection{
   background-color: #3A404B;
   color: black;
 }
+    
+h2.start {
+    color: #C7CED4;
+}
 
 /* This is the flexbox that formats each individual coursetype box containing image and text and causes them to wrap*/
 .coursetypes {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     width: 80%;
-    margin: 0 auto; 
-    padding-top: 2rem;
+    margin: 0 auto;
+    height: auto;
+    padding: 2rem;
     border: solid black 2px;
 }
 
@@ -337,9 +350,9 @@ h3 {
     width: 30%;
     margin-bottom: 2rem;
     border: solid black 2px;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+    height: auto;
+    align-items: flex-start;
+    justify-content: space-around;
 }
 
 /* This is the style that centers each image its width and other formatting*/
@@ -359,12 +372,50 @@ h3 {
 }
 
 /* Media Queries for Courses Section */
+@media only screen and (max-width: 760px) { 
+  .coursetypes {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0 auto;
+}
+  .courses {
+   width: 90%;
+    margin-bottom: .6rem;
+    }
     
+  .courseimg {
+    display: none;
+    }
+    
+  .coursecaption {
+    background-color: #B1C1D0;
+    color: white;
+    border-radius: .4rem;
+    width: 90%;}
+      
+  .coursecaption h4 {
+     font-size: 1.25rem;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     color: #FFFFFF;
+      }
+    
+  .coursecaption h5, .coursecaption p {
+     display: none;
+    }
+}
 
 /* Thesis Section */
 #videosection {
     background-color: #C7CED4;
 }
+
+/* Media Queries for Thesis Section */
+@media only screen and (max-width: 760px) {
+#videosection .content.left, #videosection h3, #videosection p {
+        display: none; }
 
 /* Footer Section */
     
