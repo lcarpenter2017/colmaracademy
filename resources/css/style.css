@@ -28,6 +28,12 @@ html {
   color: white;
 }
 
+.button:hover {
+    background-color:#F7F986;
+    color: #3A404B;
+    transition: all 750ms ease-out;
+}
+
 h2, h3, h4, p, {
   font-family: Palatino;
   color: #3A404B;
@@ -285,6 +291,12 @@ p.hiring {
   color: white;
   background-color: #3A404B;
 }
+
+.orientation a:hover {
+    background-color:#B1C1D0;
+    color: #3A404B;
+    transition: all 750ms ease-out; 
+}
     
 /* Media Queries for Information Section */
 @media only screen and (max-width: 760px) {
@@ -324,8 +336,6 @@ p.hiring {
 h2.start {
   color: #C7CED4;
   font-size: 1.5rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem; 
 }
 
 /* This is the flexbox that formats the box containing all of the individual courses*/
@@ -385,7 +395,12 @@ h2.start {
     width: 100%;
     text-align: center;
   }
-      
+
+  .coursecaption:hover {
+    background-color: #3A404B;
+    transition: all 750ms ease-out; 
+}
+    
   .coursecaption h4 {
     font-size: 1rem;
     align-items: center;
