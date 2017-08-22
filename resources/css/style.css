@@ -67,8 +67,7 @@ p {
   padding-bottom: .75rem;
 }
 
-/* Header */
-
+/* Header including Logo and Nav Bar*/
 header .content {
   display: flex;
   justify-content: space-between;
@@ -137,7 +136,6 @@ header .mobile {
 }
 
 /* Media Queries for Header Section */
-
 @media only screen and (max-width: 760px) {
   header .content {
     padding: .5rem 0;
@@ -175,7 +173,6 @@ header .mobile {
 }
 
 /* Main Banners */
-
 .main-content {
   color: black;
   background-color: #FFFFFF;
@@ -187,10 +184,10 @@ header .mobile {
 }
 
 p.hiring {
-    font-weight: bold;
-    text-align: left;
-    padding: 2rem 0rem 2rem 0rem;
-    font-size: .75rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 2rem 0rem 2rem 0rem;
+  font-size: .75rem;
 }
 
 .secondary.banner {
@@ -198,7 +195,7 @@ p.hiring {
 }
 
 .main-image, .secondary-image, .video-video {
-  max-width: 60%;
+  width: 60%;
 }
 
 .secondary img, video {
@@ -213,10 +210,9 @@ p.hiring {
 }
 
 /* Media Queries for Banners Section */
-
 @media only screen and (max-width: 760px) {
   .main-content {
-    top: 5rem;
+    top: 5rem;  
   }
     
   .banner {
@@ -225,14 +221,16 @@ p.hiring {
     margin: 0;
     padding: .5rem;
   }
-    
-  .container {
-    padding: 0;
-  }
 
-  .main-image {
+  .main-image.container{
     width: 100%;
-    padding: 0;
+    padding: 0rem;
+  }
+    
+  .content.container {
+    width: 100%;
+    margin-top: 1.25rem;
+    padding: 0rem;
   }
     
   h2 {
@@ -249,7 +247,7 @@ p.hiring {
   .starthere {
     align-content: center;
     text-align: center;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }  
 }
@@ -257,29 +255,29 @@ p.hiring {
 /* Information Section */
 
 .rightpix {
-    display: flex;
-    align-items: center;
-    margin: 1rem auto;
-    background-color: white;
-    border-bottom: solid #3A404B .25rem;
-    border-top: solid #3A404B .25rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  background-color: white;
+  border-bottom: solid #3A404B .25rem;
+  border-top: solid #3A404B .25rem;
 }
 
 .rightpix img {
-    width: 35%;
-    padding: 1rem;
-    height: auto;
+  width: 35%;
+  padding: 1rem;
+  height: auto;
 }
 
 .rightpix img:nth-child(2n){
-    display: none;
+  display: none;
 }
 
 .rightcaption {
-    max-width: 100%;
-    height: auto;
-    margin: 0
-    color: white;
+  max-width: 100%;
+  height: auto;
+  margin: 0
+  color: white;
 }
 
 .orientation a {
@@ -291,84 +289,81 @@ p.hiring {
 }
     
 /* Media Queries for Information Section */
-
 @media only screen and (max-width: 760px) {
-    
-    .rightpix {
-        flex-direction: column;
-        text-align: center;
-        margin: 0;
-        padding: .5rem;
-        border-left: none;
-        border-top: .8rem solid #3A404B;
-        border-bottom: none;
+  .rightpix {
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: .5rem;
+    border-left: none;
+    border-top: .35rem solid #3A404B;
+    border-bottom: none;
     }
     
-    .rightpix img:first-of-type {
-        display: none;
+  .rightpix img:first-of-type {
+    display: none;
     }
     
-    .rightpix img:nth-child(2n){
-        display: block;
-        width: 100%;
+   .rightpix img:nth-child(2n){
+     display: block;
+     width: 100%;
     }
         
     .rightcaption {
-        width: 100%;
+      width: 100%;
     }
 }
     
 /* Course Section */
 
-/* This is the course section where the background and text colors are styles */
+/* This is the course section where the background, text color and text formatting are styled */
+
 #coursesection{
   background-color: #3A404B;
   color: black;
 }
     
 h2.start {
-    color: #C7CED4;
+  color: #C7CED4;
+  font-size: 1.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem; 
 }
 
-/* This is the flexbox that formats each individual coursetype box containing image and text and causes them to wrap*/
+/* This is the flexbox that formats the box containing all of the individual courses*/
+
 .coursetypes {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
-    height: auto;
-    padding: 2rem;
-    border: solid black 2px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  padding: 2rem;
+  border: solid black 2px;
 }
 
 /* This is the flexbox that gives the box containing each image its width and other formatting*/
+
 .courses {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin-bottom: 2rem;
-    border: solid black 2px;
-    height: auto;
-    align-items: flex-start;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 2rem;
+  border: solid black 2px;
 }
 
-/* This is the style that centers each image its width and other formatting*/
+/* This is the style that centers each image */
 .courseimg {
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* This is the style that pertains to the box surrounding the course captions */
-    
 .coursecaption {
-    background-color: white;
-    padding: 1rem 1.5rem 1.5rem 1rem;
-    height: 100%;
-    margin: 0 auto;
+  background-color: white;
+  padding: 1rem 1.5rem 1.5rem 1rem;
+  height: 100%;
 }
 
 /* Media Queries for Courses Section */
@@ -378,57 +373,59 @@ h2.start {
     flex-direction: column;
     padding: 1rem;
     margin: 0 auto;
-}
+  }
+    
   .courses {
    width: 90%;
     margin-bottom: .6rem;
-    }
+  }
     
   .courseimg {
     display: none;
-    }
+  }
     
   .coursecaption {
     background-color: #B1C1D0;
     color: white;
     border-radius: .4rem;
-    width: 90%;}
+    width: 90%;
+  }
       
   .coursecaption h4 {
-     font-size: 1.25rem;
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-     color: #FFFFFF;
-      }
+    font-size: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
     
   .coursecaption h5, .coursecaption p {
-     display: none;
+    display: none;
     }
 }
 
 /* Thesis Section */
 #videosection {
-    background-color: #C7CED4;
+  background-color: #C7CED4;
 }
 
 /* Media Queries for Thesis Section */
 @media only screen and (max-width: 760px) {
-#videosection .content.left, #videosection h3, #videosection p {
-        display: none; }
+  #videosection .content.container, #videosection h3, #videosection p {
+    display: none; }
+}
 
 /* Footer Section */
     
 footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 1.5rem 2rem 1.5rem;
-    font-size: .75rem;
-    background-color: #B1C1D0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  font-size: .75rem;
+  background-color: #B1C1D0;
 }
     
 .copyright {
     font-size: .75rem; 
-    }
+}
     
-/* Media Queries for Footer Section */
